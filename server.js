@@ -1,4 +1,5 @@
 const express = require('express');
+const uniqid = require('uniqid');
 const fs = require('fs');
 const path = require('path');
 
@@ -15,7 +16,7 @@ app.get('/', (req, res) =>
 
 app.get('/notes', (req, res) => 
     res.sendFile(path.join(__dirname, '/public/notes.html'))
-)
+);
 
 app.listen(PORT, () => {
     console.log(`This server is listening on ${PORT}!`);
