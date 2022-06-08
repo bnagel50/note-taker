@@ -2,7 +2,7 @@ const express = require('express');
 const uniqid = require('uniqid');
 const fs = require('fs');
 const path = require('path');
-const api = require('../note-taker/starter/Develop/routes/index.js')
+const api = require('./starter/Develop/routes/index.js')
 
 const PORT = process.env.PORT || 3001;
 const app = express();
